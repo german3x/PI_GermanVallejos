@@ -8,12 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class HysComponent implements OnInit {
 
   habilidades: any[] = [
-    { nombre: 'HTML', porcentaje: 90, imagen: 'ruta_de_la_imagen' },
-    { nombre: 'CSS', porcentaje: 85, imagen: 'ruta_de_la_imagen' },
-    { nombre: 'JavaScript', porcentaje: 80, imagen: 'ruta_de_la_imagen' },
-    { nombre: 'C++', porcentaje: 75, imagen: 'ruta_de_la_imagen' },
-    { nombre: 'Trabajo en equipo', porcentaje: 95, imagen: 'ruta_de_la_imagen' },
-    { nombre: 'Inglés', porcentaje: 70, imagen: 'ruta_de_la_imagen' }
+    { nombre: 'HTML', porcentaje: 90, imagen: 'assets/html.png' },
+    { nombre: 'CSS', porcentaje: 85, imagen: 'assets/CSS.png' },
+    { nombre: 'JavaScript', porcentaje: 80, imagen: 'assets/js.png' },
+    { nombre: 'C++', porcentaje: 75, imagen: 'assets/c++.png' },
+    { nombre: 'Trabajo en equipo', porcentaje: 95, imagen: 'assets/grupal.png' },
+    { nombre: 'Inglés', porcentaje: 70, imagen: 'assets/eng.png' }
   ];
 
   constructor() { }
