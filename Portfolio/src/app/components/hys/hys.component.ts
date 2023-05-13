@@ -26,8 +26,8 @@ export class HysComponent implements OnInit {
     const progressCircles = document.querySelectorAll('.progress-circle');
 
     progressCircles.forEach((progressCircle: any) => {
-      const porcentaje = progressCircle.getAttribute('data-porcentaje');
-      const imagen = progressCircle.getAttribute('data-imagen');
+      const porcentaje: any = progressCircle.getAttribute('data-porcentaje');
+      const imagen: any = progressCircle.getAttribute('data-imagen');
 
       const progress = progressCircle.querySelector('.progress-circle__progress');
       const number = progressCircle.querySelector('.progress-circle__number');
