@@ -1,0 +1,145 @@
+/* Progress Circle */
+.progress-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 10px solid #ddd;
+    position: relative;
+  }
+  
+  .progress-number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .progress-circle::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 10px solid #1abc9c;
+    border-top-color: #fff;
+    border-right-color: #fff;
+    transform-origin: 50% 50%;
+    animation: progress-rotate 2s linear forwards;
+  }
+  
+  @keyframes progress-rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Progress Bar */
+  .progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .progress-bar::after {
+    content: attr(data-progress) '%';
+    display: block;
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    background-color: #1abc9c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 2s ease-in-out;
+  }
+  
+  /* Skill Containers */
+  .skill-container {
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  .skill-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  /* Progress Circle for Teamwork */
+  .progress-circle.team-work {
+    border-color: #007bff;
+  }
+  
+  .progress-circle.team-work::before {
+    border-color: #007bff;
+  }
+  
+  .progress-circle.team-work::after {
+    content: 'Team-work';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url('../../../assets/grupal.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Progress Circle for English */
+  .progress-circle.english {
+    border-color: #ffc107;
+  }
+  
+  .progress-circle.english::before {
+    border-color: #ffc107;
+  }
+  
+  .progress-circle.english::after {
+    content: 'English';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url('../../../assets/eng.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Progress Circle for HTML */
+  .progress-circle.html {
+    border-color: #e74c3c;
+  }
+  
+  .progress-circle.html::before {
+    border-color: #e74c3c;
+  }
+  
+  .progress-circle.html::after {
+    content: 'HTML';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url('../../../assets/html.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
